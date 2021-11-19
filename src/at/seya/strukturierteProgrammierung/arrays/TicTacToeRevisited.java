@@ -215,11 +215,11 @@ public class TicTacToeRevisited {
 
         }
 
-        if(player1win = true) {
+        if(player1win == true) {
             System.out.println("Glückwunsch Spieler 1 du hast Gewonnen!");
         }
 
-        if(player2win = true) {
+        if(player2win == true) {
             System.out.println("Glückwunsch Spieler 2 du hast Gewonnen!");
         }
 
