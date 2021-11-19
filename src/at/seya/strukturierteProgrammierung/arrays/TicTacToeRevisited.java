@@ -11,6 +11,8 @@ public class TicTacToeRevisited {
         Scanner scanner = new Scanner(System.in);
 
         boolean win = false;
+        boolean player1win = false;
+        boolean player2win = false;
 
         while (win == false) {
 
@@ -51,6 +53,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][0] == 1) {
                     if (tictactoeArray[2][0] == 1) {
                         win = true;
+                        player1win = false;
                     }
                 }
             }
@@ -60,6 +63,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[0][1] == 1) {
                     if (tictactoeArray[0][2] == 1) {
                         win = true;
+                        player1win = false;
                     }
                 }
             }
@@ -69,6 +73,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][1] == 1) {
                     if (tictactoeArray[2][1] == 1) {
                         win = true;
+                        player1win = false;
                     }
                 }
             }
@@ -78,6 +83,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][1] == 1) {
                     if (tictactoeArray[1][2] == 1) {
                         win = true;
+                        player1win = false;
                     }
                 }
             }
@@ -87,6 +93,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][2] == 1) {
                     if (tictactoeArray[2][2] == 1) {
                         win = true;
+                        player1win = false;
                     }
                 }
             }
@@ -96,14 +103,17 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[2][1] == 1) {
                     if (tictactoeArray[2][2] == 1) {
                         win = true;
+                        player1win = false;
                     }
                 }
             }
 
+            // Player 2 Win conditons
             if (tictactoeArray[0][0] == 2) {
                 if (tictactoeArray[1][0] == 2) {
                     if (tictactoeArray[2][0] == 2) {
                         win = true;
+                        player2win = false;
                     }
                 }
             }
@@ -113,6 +123,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[0][1] == 2) {
                     if (tictactoeArray[0][2] == 2) {
                         win = true;
+                        player2win = false;
                     }
                 }
             }
@@ -122,6 +133,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][1] == 2) {
                     if (tictactoeArray[2][1] == 2) {
                         win = true;
+                        player2win = false;
                     }
                 }
             }
@@ -131,6 +143,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][1] == 2) {
                     if (tictactoeArray[1][2] == 2) {
                         win = true;
+                        player2win = false;
                     }
                 }
             }
@@ -140,6 +153,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][2] == 2) {
                     if (tictactoeArray[2][2] == 2) {
                         win = true;
+                        player2win = false;
                     }
                 }
             }
@@ -149,6 +163,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[2][1] == 2) {
                     if (tictactoeArray[2][2] == 2) {
                         win = true;
+                        player2win = false;
 
                     }
                 }
@@ -156,14 +171,18 @@ public class TicTacToeRevisited {
 
         }
 
-        System.out.println("Spieler 1 hat gewonnen!");
+        if(player1win = true) {
+            System.out.println("Glückwunsch Spieler 1 du hast Gewonnen!");
+        }
 
-        // Win conditions Player 2
-        // 1 Waagrecht
+        if(player2win = true) {
+            System.out.println("Glückwunsch Spieler 2 du hast Gewonnen!");
+        }
+
+
 
 
     }
 }
-
 
 
