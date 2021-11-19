@@ -53,7 +53,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][0] == 1) {
                     if (tictactoeArray[2][0] == 1) {
                         win = true;
-                        player1win = false;
+                        player1win = true;
                     }
                 }
             }
@@ -63,7 +63,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[0][1] == 1) {
                     if (tictactoeArray[0][2] == 1) {
                         win = true;
-                        player1win = false;
+                        player1win = true;
                     }
                 }
             }
@@ -73,7 +73,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][1] == 1) {
                     if (tictactoeArray[2][1] == 1) {
                         win = true;
-                        player1win = false;
+                        player1win = true;
                     }
                 }
             }
@@ -83,7 +83,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][1] == 1) {
                     if (tictactoeArray[1][2] == 1) {
                         win = true;
-                        player1win = false;
+                        player1win = true;
                     }
                 }
             }
@@ -93,7 +93,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][2] == 1) {
                     if (tictactoeArray[2][2] == 1) {
                         win = true;
-                        player1win = false;
+                        player1win = true;
                     }
                 }
             }
@@ -103,7 +103,29 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[2][1] == 1) {
                     if (tictactoeArray[2][2] == 1) {
                         win = true;
-                        player1win = false;
+                        player1win = true;
+                    }
+                }
+            }
+
+            // Waagrecht 1
+            if (tictactoeArray[0][0] == 1) {
+                if (tictactoeArray[1][1] == 1) {
+                    if (tictactoeArray[2][2] == 1) {
+                        win = true;
+                        player1win = true;
+
+                    }
+                }
+            }
+
+            // Waagrecht 2
+            if (tictactoeArray[0][2] == 1) {
+                if (tictactoeArray[1][1] == 1) {
+                    if (tictactoeArray[2][0] == 1) {
+                        win = true;
+                        player1win = true;
+
                     }
                 }
             }
@@ -113,7 +135,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][0] == 2) {
                     if (tictactoeArray[2][0] == 2) {
                         win = true;
-                        player2win = false;
+                        player2win = true;
                     }
                 }
             }
@@ -123,7 +145,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[0][1] == 2) {
                     if (tictactoeArray[0][2] == 2) {
                         win = true;
-                        player2win = false;
+                        player2win = true;
                     }
                 }
             }
@@ -133,7 +155,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][1] == 2) {
                     if (tictactoeArray[2][1] == 2) {
                         win = true;
-                        player2win = false;
+                        player2win = true;
                     }
                 }
             }
@@ -143,7 +165,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][1] == 2) {
                     if (tictactoeArray[1][2] == 2) {
                         win = true;
-                        player2win = false;
+                        player2win = true;
                     }
                 }
             }
@@ -153,7 +175,7 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[1][2] == 2) {
                     if (tictactoeArray[2][2] == 2) {
                         win = true;
-                        player2win = false;
+                        player2win = true;
                     }
                 }
             }
@@ -163,7 +185,29 @@ public class TicTacToeRevisited {
                 if (tictactoeArray[2][1] == 2) {
                     if (tictactoeArray[2][2] == 2) {
                         win = true;
-                        player2win = false;
+                        player2win = true;
+
+                    }
+                }
+            }
+
+            // Waagrecht 1
+            if (tictactoeArray[0][0] == 2) {
+                if (tictactoeArray[1][1] == 2) {
+                    if (tictactoeArray[2][2] == 2) {
+                        win = true;
+                        player2win = true;
+
+                    }
+                }
+            }
+
+            // Waagrecht 2
+            if (tictactoeArray[0][2] == 2) {
+                if (tictactoeArray[1][1] == 2) {
+                    if (tictactoeArray[2][0] == 2) {
+                        win = true;
+                        player2win = true;
 
                     }
                 }
