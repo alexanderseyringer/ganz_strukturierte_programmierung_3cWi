@@ -27,7 +27,7 @@ public class HangMan {
 
         char[] userinput = new char[4];
         for (int i = 0; i < 4; i++) {
-            userinput[i] = scammerinput.next();
+
         }
 
 

@@ -44,6 +44,7 @@ public class TicTacToeRevisited {
 
             tictactoeArray[playerinput3][playerinput4] = 2;
 
+
             // Win conditions Player 1
             // 1 Waagrecht
             if (tictactoeArray[0][0] == 1) {
@@ -99,63 +100,70 @@ public class TicTacToeRevisited {
                 }
             }
 
+            if (tictactoeArray[0][0] == 2) {
+                if (tictactoeArray[1][0] == 2) {
+                    if (tictactoeArray[2][0] == 2) {
+                        win = true;
+                    }
+                }
+            }
+
+            // 1 Senkrecht
+            if (tictactoeArray[0][0] == 2) {
+                if (tictactoeArray[0][1] == 2) {
+                    if (tictactoeArray[0][2] == 2) {
+                        win = true;
+                    }
+                }
+            }
+
+            // 2 Waagrecht
+            if (tictactoeArray[0][1] == 2) {
+                if (tictactoeArray[1][1] == 2) {
+                    if (tictactoeArray[2][1] == 2) {
+                        win = true;
+                    }
+                }
+            }
+
+            // 2 Senkrecht
+            if (tictactoeArray[1][0] == 2) {
+                if (tictactoeArray[1][1] == 2) {
+                    if (tictactoeArray[1][2] == 2) {
+                        win = true;
+                    }
+                }
+            }
+
+            // 3 Waagrecht
+            if (tictactoeArray[0][2] == 2) {
+                if (tictactoeArray[1][2] == 2) {
+                    if (tictactoeArray[2][2] == 2) {
+                        win = true;
+                    }
+                }
+            }
+
+            // 3 Senkrecht
+            if (tictactoeArray[2][0] == 2) {
+                if (tictactoeArray[2][1] == 2) {
+                    if (tictactoeArray[2][2] == 2) {
+                        win = true;
+
+                    }
+                }
+            }
+
         }
+
+        System.out.println("Spieler 1 hat gewonnen!");
 
         // Win conditions Player 2
         // 1 Waagrecht
-        if (tictactoeArray[0][0] == 2) {
-            if (tictactoeArray[1][0] == 2) {
-                if (tictactoeArray[2][0] == 2) {
-                    win = true;
-                }
-            }
-        }
 
-        // 1 Senkrecht
-        if (tictactoeArray[0][0] == 2) {
-            if (tictactoeArray[0][1] == 2) {
-                if (tictactoeArray[0][2] == 2) {
-                    win = true;
-                }
-            }
-        }
 
-        // 2 Waagrecht
-        if (tictactoeArray[0][1] == 2) {
-            if (tictactoeArray[1][1] == 2) {
-                if (tictactoeArray[2][1] == 2) {
-                    win = true;
-                }
-            }
-        }
-
-        // 2 Senkrecht
-        if (tictactoeArray[1][0] == 2) {
-            if (tictactoeArray[1][1] == 2) {
-                if (tictactoeArray[1][2] == 2) {
-                    win = true;
-                }
-            }
-        }
-
-        // 3 Waagrecht
-        if (tictactoeArray[0][2] == 2) {
-            if (tictactoeArray[1][2] == 2) {
-                if (tictactoeArray[2][2] == 2) {
-                    win = true;
-                }
-            }
-        }
-
-        // 3 Senkrecht
-        if (tictactoeArray[2][0] == 2) {
-            if (tictactoeArray[2][1] == 2) {
-                if (tictactoeArray[2][2] == 2) {
-                    win = true;
-                }
-            }
-        }
-
-        System.out.println("Ein Spieler hat gewonnen!");
     }
 }
+
+
+
