@@ -10,25 +10,23 @@ public class HangMan {
             geheimeWort += "*";
         }
 
-          char[] preselected = ersteWort.toCharArray(); // Zeug ausm String in ein Array schreiben
-        for (int i = 0; i < preselected.length; i++) {
-           // System.out.print(preselected[i]);     Inhalt vom Array ausgeben -> Nur für Testzwecke
+          char[] preselectedWord = ersteWort.toCharArray(); // Zeug ausm String in ein Array schreiben
+        for (int i = 0; i < preselectedWord.length; i++) {
+           // System.out.print(preselectedWord[i]);     //Inhalt vom Array ausgeben -> Nur für Testzwecke
         }
 
         Scanner scammerinput = new Scanner(System.in);
 
         // Hier irgendwie nen loop hinklatschen oder so
 
-        System.out.println("Herzlichen Willkommen bei Hangman");
+        System.out.println("Herzlichen Willkommen bei Hangman!");
+        System.out.println("Es ist ganz einfach: die Sterne stehen jeweils für einen Buchstaben und du must nun in 6 Runden das Wort erraten, sonst hast du Verloren");
 
         System.out.println(geheimeWort);
 
         System.out.println("Bitte gib nun deinen Lösungsansatz ein!");
 
-        char[] userinput = new char[4];
-        for (int i = 0; i < 4; i++) {
 
-        }
 
 
     }

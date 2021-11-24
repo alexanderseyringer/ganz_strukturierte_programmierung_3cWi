@@ -1,3 +1,3 @@
-# Welcome to the strukturierteProgrammierung repo!
+# Welcome to the ganzstrukturierteProgrammierung repo!
 
 **Here could be some nice text**
