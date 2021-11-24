@@ -17,7 +17,7 @@ public class TicTacToeRevisited {
 
         while (win == false) {
 
-            if(gamerounds == 10){
+            if (gamerounds == 10) {
                 System.out.println("Das Spiel ist leider vorbei und niemand hat Gewonnen!");
                 break;
             }
@@ -54,8 +54,6 @@ public class TicTacToeRevisited {
             int playerinput4 = scanner.nextInt();
 
             tictactoeArray[playerinput3][playerinput4] = 2;
-
-
 
 
             // Win conditions Player 1
@@ -228,15 +226,13 @@ public class TicTacToeRevisited {
 
         }
 
-        if(player1win == true) {
+        if (player1win == true) {
             System.out.println("Glückwunsch Spieler 1 du hast Gewonnen!");
         }
 
-        if(player2win == true) {
+        if (player2win == true) {
             System.out.println("Glückwunsch Spieler 2 du hast Gewonnen!");
         }
-
-
 
 
     }
