@@ -13,10 +13,19 @@ public class TicTacToeRevisited {
         boolean win = false;
         boolean player1win = false;
         boolean player2win = false;
+        int gamerounds = 1;
 
         while (win == false) {
 
+            if(gamerounds == 10){
+                System.out.println("Das Spiel ist leider vorbei und niemand hat Gewonnen!");
+                break;
+            }
+
+            System.out.println("Wir befinden uns gerade in Runde: " + gamerounds + "/9");
+
             System.out.println("Das Spiel ist ganz einfach: Am Anfang einer Runde wird dir das Spielfeld angezeigt, eine 0 ist ein leeres Feld, eine 1 steht für Spieler 1 usw.");
+
 
             for (int row = 0; row < tictactoeArray.length; row++) {
                 for (int col = 0; col < tictactoeArray.length; col++) {
@@ -45,6 +54,8 @@ public class TicTacToeRevisited {
             int playerinput4 = scanner.nextInt();
 
             tictactoeArray[playerinput3][playerinput4] = 2;
+
+
 
 
             // Win conditions Player 1
@@ -213,6 +224,8 @@ public class TicTacToeRevisited {
                 }
             }
 
+            gamerounds = gamerounds + 1;
+
         }
 
         if(player1win == true) {
@@ -228,5 +241,4 @@ public class TicTacToeRevisited {
 
     }
 }
-
 
