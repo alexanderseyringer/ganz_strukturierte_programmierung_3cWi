@@ -15,10 +15,9 @@ public class arabicArrays {
 
             int sentencesCount = scammer.nextInt();
 
-            // Danke Michael
             String[] anrede = {"Er ", "Sie "};
             String[] action = {"geht ", "läuft ", "rennt ", "fährt "};
-            String[] location = {"nach Hause.", "zur Schule.", "ins Büro.", "ins Puff."}; //Eventuell Jugendfreundlicher machen
+            String[] location = {"nach Hause.", "zur Schule.", "ins Büro.", "auf die Party."};
 
             for (int i = 0; i < sentencesCount; i++) {
                 int randomizerAnrede = randomizer2000.nextInt(2);
