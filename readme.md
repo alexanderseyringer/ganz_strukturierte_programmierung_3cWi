@@ -1,3 +1,9 @@
-# Welcome to the ganzstrukturierteProgrammierung repo!
+# Welcome to the ganzStrukturierteProgrammierung repo!
 
-**Here could be some nice text**
+##DE
+
+Dieses repository beinhaltet sämtliche Aufgaben und Beispiele, die in der 3. Klasse SWP durchgeführt werden.
+
+##EN
+
+Useless
