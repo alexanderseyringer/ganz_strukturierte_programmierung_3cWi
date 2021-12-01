@@ -11,10 +11,7 @@ public class HangMan {
             geheimeWort[i] = '*';
         }
 
-        char[] preselectedWord = ersteWort.toCharArray(); // Zeug ausm String in ein Array schreiben
-          /*  for (int i = 0; i < preselectedWord.length; i++) {
-           // System.out.print(preselectedWord[i]);     //Inhalt vom Array ausgeben -> Nur für Testzwecke
-        } */
+        char[] preselectedWord = ersteWort.toCharArray();
 
         Scanner scammerinput = new Scanner(System.in);
 
@@ -23,7 +20,6 @@ public class HangMan {
 
         String ganzeWort = "";
 
-        // Hier irgendwie nen loop hinklatschen oder so
 
         while(win == false){
             System.out.println("Herzlichen Willkommen bei Hangman!");
@@ -37,13 +33,6 @@ public class HangMan {
             System.out.println("Bitte gib nun deinen Lösungsansatz ein!");
 
             userInput = scammerinput.next().charAt(0);
-
-            // System.out.println(userInput); //Ausgabe ob der Lachs löppt
-
-            // char[] userGuess = userInput.toCharArray();
-           /* for (int i = 0; i < userGuess.length; i++) {
-                System.out.println(userGuess[i]);
-            } */
 
             for (int i = 0; i < preselectedWord.length; i++) {
                 if (preselectedWord[i] == userInput){
