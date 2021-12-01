@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class HangMan {
     public static void main(String[] args) {
-        String ersteWort = "Peta";
+        String ersteWort = "Lukas";
 
         char[] geheimeWort = new char[ersteWort.length()];
         for (int i = 0; i < geheimeWort.length; i++) {
@@ -20,6 +20,8 @@ public class HangMan {
 
         String ganzeWort = "";
 
+        int userErrors = 0;
+
 
         while(win == false){
             System.out.println("Herzlichen Willkommen bei Hangman!");
@@ -34,11 +36,25 @@ public class HangMan {
 
             userInput = scammerinput.next().charAt(0);
 
+            //TODO: Fix nix win conditon!
             for (int i = 0; i < preselectedWord.length; i++) {
                 if (preselectedWord[i] == userInput){
                     geheimeWort[i] = preselectedWord[i];
                     // System.out.println("Wenn des funktioniert friss i an besa");
-                };
+                    return;
+                }
+
+                else {
+                    userErrors = userErrors + 1;
+
+                    System.out.println("Oh nein! Du hast einen Fehler gemacht! Das ist nun Fehler " + userErrors + "von 6");
+                    return;
+                }
+            }
+
+            if(userErrors == 6) {
+                System.out.println("Du hast Verloren, da du deinen 6. Fehler gemacht hast!");
+                return;
             }
 
             for (int ie = 0; ie < geheimeWort.length; ie++) {
