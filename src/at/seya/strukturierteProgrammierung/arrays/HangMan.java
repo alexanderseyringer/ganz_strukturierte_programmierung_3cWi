@@ -50,7 +50,7 @@ public class HangMan {
             }
 
             if(userdidsomethingright == false){
-                System.out.println("Es goht ne");
+                //System.out.println("Unmöglich!");
 
                 userErrors = userErrors + 1;
 
