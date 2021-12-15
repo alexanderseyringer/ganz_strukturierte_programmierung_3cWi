@@ -1,14 +1,14 @@
-package at.seya.OO.Car;
+package at.seya.OO.car;
 
 public class Car {
-    public String brand;
-    public String model;
-    public String colour;
-    public String fuelType;
-    public int fuelConsumption;
-    public int fuelAmount;
-    public int fuelCapacity;
-    public String serialNumber;
+    private String brand;
+    private String model;
+    private String colour;
+    private String fuelType;
+    private int fuelConsumption;
+    private int fuelAmount;
+    private int fuelCapacity;
+    private String serialNumber;
 
     public Car(String brand, String model, String fuelType) {
         this.brand = brand;
@@ -44,6 +44,71 @@ public class Car {
 
     public void getRemainingRange(){
         int range = fuelAmount/fuelConsumption;
-        System.out.println("Die Restreichweite Beträgt: " + range + "km!");
+        range = range * 100;
+        System.out.println("Die Restreichweite Beträgt: " + range + "km");
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public String getFuelType() {
+        return fuelType;
+    }
+
+    public void setFuelType(String fuelType) {
+        this.fuelType = fuelType;
+    }
+
+    public int getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public void setFuelConsumption(int fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    public int getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public void setFuelAmount(int fuelAmount) {
+        this.fuelAmount = fuelAmount;
+    }
+
+    public int getFuelCapacity() {
+        return fuelCapacity;
+    }
+
+    public void setFuelCapacity(int fuelCapacity) {
+        this.fuelCapacity = fuelCapacity;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
     }
 }
