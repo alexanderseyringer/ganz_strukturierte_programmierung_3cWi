@@ -10,6 +10,13 @@ public class Car {
     public int fuelCapacity;
     public String serialNumber;
 
+    public Car(String brand, String model, String fuelType) {
+        this.brand = brand;
+        this.model = model;
+        this.fuelType = fuelType;
+    }
+
+
     public void drive(){
         this.fuelAmount = this.fuelAmount - fuelConsumption;
         System.out.println("Dat Auto löppt!");
