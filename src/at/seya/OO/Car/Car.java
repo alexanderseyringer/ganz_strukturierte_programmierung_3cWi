@@ -34,4 +34,9 @@ public class Car {
             System.out.println("Tuuuuuut");
         }
     }
+
+    public void getRemainingRange(){
+        int range = fuelAmount/fuelConsumption;
+        System.out.println("Die Restreichweite Beträgt: " + range + "km!");
+    }
 }

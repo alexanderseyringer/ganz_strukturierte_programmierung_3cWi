@@ -19,6 +19,6 @@ public class Main {
 
         c1.ecoBoost();
 
-        c1.honk(11);
+        c1.getRemainingRange();
     }
 }
