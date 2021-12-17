@@ -11,13 +11,15 @@ public class Main {
 
        */
 
-        Car c2 = new Car("Audi", "A6 Avant 75 TFSI BusinessLine", "Diesel");
+        Engine e1 = new Engine(145, Engine.engineType.Diesel);
+
+        Car c2 = new Car(e1, "Audi", "A6 75 TDI S-Line");
         c2.setBrand("Audi");
         c2.getBrand();
         c2.getModel();
         c2.setColour("ArcticWhite");
         c2.getColour();
-        c2.getFuelType();
+        c2.getEngine();
         c2.setFuelConsumption(5);
         c2.getFuelConsumption();
         c2.setFuelAmount(65);
