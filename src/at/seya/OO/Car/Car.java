@@ -1,10 +1,13 @@
 package at.seya.OO.car;
 
+import java.util.List;
+
 public class Car {
     private String brand;
     private String model;
     private String colour;
     private Engine engine;
+    private List<RearMirror> mirrors;
     private int fuelConsumption;
     private int fuelAmount;
     private int fuelCapacity;
@@ -15,6 +18,10 @@ public class Car {
         this.brand = brand;
         this.model = model;
     }
+
+   public void addMirror(RearMirror rearMirror){
+        this.mirrors.add(rearMirror);
+   }
 
 
     public void drive(){

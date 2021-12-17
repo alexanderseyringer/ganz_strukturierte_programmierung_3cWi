@@ -11,29 +11,33 @@ public class Main {
 
        */
 
-        Engine e1 = new Engine(145, Engine.engineType.Diesel);
+        Tank t1 = new Tank(Tank.fuelType.Diesel, 65, 75);
 
-        Car c2 = new Car(e1, "Audi", "A6 75 TDI S-Line");
-        c2.setBrand("Audi");
-        c2.getBrand();
-        c2.getModel();
-        c2.setColour("ArcticWhite");
-        c2.getColour();
-        c2.getEngine();
-        c2.setFuelConsumption(5);
-        c2.getFuelConsumption();
-        c2.setFuelAmount(65);
-        c2.getFuelAmount();
-        c2.setFuelCapacity(75);
-        c2.getFuelCapacity();
-        c2.setSerialNumber("A782d");
-        c2.getSerialNumber();
+        Engine e1 = new Engine(t1,145, Engine.engineType.Diesel);
 
-        c2.drive();
-       System.out.println("Aktueller Fuellstand: " + c2.getFuelAmount());
+        Car a6 = new Car(e1, "Audi", "A6 75 TDI S-Line");
+        a6.setBrand("Audi");
+        a6.getBrand();
+        a6.getModel();
+        a6.setColour("ArcticWhite");
+        a6.getColour();
+        a6.getEngine();
+        a6.setFuelConsumption(5);
+        a6.getFuelConsumption();
+        a6.setFuelAmount(t1.getFuelAmount());
+        a6.getFuelAmount();
+        a6.setFuelCapacity(t1.getFuelLevel());
+        a6.getFuelCapacity();
+        a6.setSerialNumber("A782d");
+        a6.getSerialNumber();
 
-        c2.ecoBoost();
+        e1.drive(50);
 
-        c2.getRemainingRange();
+        a6.drive();
+       System.out.println("Aktueller Fuellstand: " + a6.getFuelAmount());
+
+        a6.ecoBoost();
+
+        a6.getRemainingRange();
     }
 }
