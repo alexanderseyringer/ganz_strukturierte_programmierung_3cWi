@@ -17,4 +17,16 @@ public class RearMirror {
         return position;
     }
 
+    public void movement() {
+        if(this.position == -10) {
+            System.out.println("Der Spiegel bewegt sich nach links...");
+        }
+        if(this.position == 10) {
+            System.out.println("Der Spiegel bewegt sich nach rechts...");
+        }
+        else {
+            System.out.println("Der Spiegel bleibt in seiner Ausgangsposition!");
+        }
+    }
+
 }
