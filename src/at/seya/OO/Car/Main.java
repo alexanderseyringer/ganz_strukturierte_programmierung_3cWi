@@ -10,12 +10,18 @@ public class Main {
         c1.serialNumber = "A987e";
 
        */
+        Tire tr1 = new Tire(Tire.manufacturer.Continental,205, 1230, 41, true, 221221, Tire.maxSpeedIndex.Z);
+        Tire tr2 = new Tire(Tire.manufacturer.Michelin, 200, 1100, 35, true, 222222, Tire.maxSpeedIndex.Q);
 
         Tank t1 = new Tank(Tank.fuelType.Diesel, 65, 75);
 
         Engine e1 = new Engine(t1,145, Engine.engineType.Diesel);
 
+        RearMirror r1 = new RearMirror(69, 0);
+        RearMirror r2 = new RearMirror(35, -10);
+
         Car a6 = new Car(e1, "Audi", "A6 75 TDI S-Line");
+
         a6.setBrand("Audi");
         a6.getBrand();
         a6.getModel();
@@ -30,14 +36,15 @@ public class Main {
         a6.getFuelCapacity();
         a6.setSerialNumber("A782d");
         a6.getSerialNumber();
+        a6.addMirror(r1);
+        a6.addMirror(r2);
+        a6.addTires(tr1);
+        a6.addTires(tr2);
 
-        e1.drive(50);
+        System.out.println(a6.getMirrors().get(0).getPosition());
 
-        a6.drive();
-       System.out.println("Aktueller Fuellstand: " + a6.getFuelAmount());
+        System.out.println(a6.getEngine().getEngineType());
 
-        a6.ecoBoost();
-
-        a6.getRemainingRange();
+        System.out.println(a6.getTires().get(1).getManufacturer());
     }
 }

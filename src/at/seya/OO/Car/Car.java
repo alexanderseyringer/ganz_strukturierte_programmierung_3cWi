@@ -1,5 +1,6 @@
 package at.seya.OO.car;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Car {
@@ -12,45 +13,49 @@ public class Car {
     private int fuelAmount;
     private int fuelCapacity;
     private String serialNumber;
+    private List<Tire> tires;
 
-    public Car(Engine engine,String brand, String model) {
+    public Car(Engine engine, String brand, String model) {
         this.engine = engine;
         this.brand = brand;
         this.model = model;
+        this.mirrors = new ArrayList<>();
+        this.tires = new ArrayList<>();
     }
 
-   public void addMirror(RearMirror rearMirror){
+    public void addMirror(RearMirror rearMirror) {
         this.mirrors.add(rearMirror);
-   }
+    }
 
+    public void addTires(Tire tires) {
+        this.tires.add(tires);
+    }
 
-    public void drive(){
+    public void drive() {
         this.fuelAmount = this.fuelAmount - fuelConsumption;
         System.out.println("Dat Auto löppt!");
     }
 
-    public void breaking(){
+    public void breaking() {
         System.out.println("Ich Bremse");
     }
 
-    public void ecoBoost(){
-        if(fuelAmount > 0.10*fuelCapacity){
+    public void ecoBoost() {
+        if (fuelAmount > 0.10 * fuelCapacity) {
             System.out.println("Super Duper Boost Mode!");
-        }
-
-        else {
+        } else {
             System.out.println("Not enough Fuel to go superduperboost!");
         }
     }
 
-    public void honk(int amountOfRepetitions){
-        for (int i = 0; i < amountOfRepetitions ; i++) {
+    public void honk(int amountOfRepetitions) {
+        for (int i = 0; i < amountOfRepetitions; i++) {
             System.out.println("Tuuuuuut");
         }
     }
 
-    public void getRemainingRange(){
-        int range = fuelAmount/fuelConsumption;
+    public void getRemainingRange() {
+        int range = fuelAmount / fuelConsumption;
         range = range * 100;
         System.out.println("Die Restreichweite Beträgt: " + range + "km");
     }
@@ -118,4 +123,13 @@ public class Car {
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
+
+    public List<Tire> getTires() {
+        return tires;
+    }
 }
+
