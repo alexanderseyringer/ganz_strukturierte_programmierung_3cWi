@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Remote {
     private List<Battery> batteries;
+    private Battery battery;
 
     public Remote() {
         this.batteries = new ArrayList<>();
@@ -15,5 +16,11 @@ public class Remote {
 
     public List<Battery> getBatteries() {
         return batteries;
+    }
+
+    public void getStatus() {
+        int averageLevel;
+        averageLevel = this.batteries.get(0) + this.batteries.get(1);
+
     }
 }
