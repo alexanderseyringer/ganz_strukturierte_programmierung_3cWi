@@ -46,5 +46,7 @@ public class Main {
         System.out.println(a6.getEngine().getEngineType());
 
         System.out.println(a6.getTires().get(1).getManufacturer());
+
+        r1.movement();
     }
 }
