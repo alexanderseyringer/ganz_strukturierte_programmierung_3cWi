@@ -13,8 +13,12 @@ public class Battery {
         this.chargingLevel = chargingLevel;
     }
 
-    public int getChargingLevel() {
+   public int getChargingLevel() {
         return chargingLevel;
+    }
+
+    public void setChargingLevel(int chargingLevel) {
+        this.chargingLevel = chargingLevel;
     }
 
     public String getBatteryType() {

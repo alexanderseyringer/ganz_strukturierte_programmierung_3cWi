@@ -9,5 +9,9 @@ public class Main {
 
         r1.addBatteries(b1);
         r1.addBatteries(b2);
+
+        r1.getStatus();
+        r1.turnOn();
+        r1.turnOff();
     }
 }
