@@ -1,8 +1,8 @@
 package at.seya.OO.calculator;
 
-public class currencyCalculatorLegacy extends BasicCalculator{
+public class CurrencyCalculatorLegacy extends BasicCalculator{
 
-    public currencyCalculatorLegacy(String producer, String model, String color) {
+    public CurrencyCalculatorLegacy(String producer, String model, String color) {
         super(producer, model, color);
     }
 
