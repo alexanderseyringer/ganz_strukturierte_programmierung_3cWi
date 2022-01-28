@@ -1,16 +1,16 @@
-package at.seya.schoolcheck.SmortLamp;
+package at.seya.schoolcheck.smortLamp;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Lamp {
-    private List<glowingFilament> glowingFilamentList;
+    private List<GlowingFilament> glowingFilamentList;
 
     public Lamp() {
         this.glowingFilamentList = new ArrayList<>();
     }
 
-    public void addFilaments(glowingFilament glowingFilamentList) {this.glowingFilamentList.add(glowingFilamentList);}
+    public void addFilaments(GlowingFilament glowingFilamentList) {this.glowingFilamentList.add(glowingFilamentList);}
 
     public void turnAllOn() {
         int numberOfFilaments = this.glowingFilamentList.size();

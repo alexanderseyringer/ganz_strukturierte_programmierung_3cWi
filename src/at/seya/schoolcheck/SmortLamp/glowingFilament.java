@@ -1,14 +1,12 @@
-package at.seya.schoolcheck.SmortLamp;
+package at.seya.schoolcheck.smortLamp;
 
-import at.seya.OO.remote.Battery;
-
-public class glowingFilament {
+public class GlowingFilament {
     private String FilamentName;
     private String FilamentColor;
     private double PowerUsage;
     private boolean Status;
 
-    public glowingFilament(String filamentName, String filamentColor, int powerUsage, boolean status) {
+    public GlowingFilament(String filamentName, String filamentColor, int powerUsage, boolean status) {
         FilamentName = filamentName;
         FilamentColor = filamentColor;
         PowerUsage = powerUsage;

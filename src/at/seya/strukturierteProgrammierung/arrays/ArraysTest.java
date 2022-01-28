@@ -8,7 +8,7 @@ public class ArraysTest {
 
         System.out.println(throwsArray[4]); //Einzelnen wert im Array ausgeben
 
-        for (int i = 0; i < throwsArray.length; i++) { //Zählt die gesamte Länge des Arrays nach oben
+        for (int i = 0; i < throwsArray.length; i++) { //Zählt die gesamte Länge des arrays nach oben
             System.out.println(throwsArray[i]);
 
             int[][] playGround = new int[3][3]; //Array mit mehren Zeilen und Spalten erstellen

@@ -1,6 +1,5 @@
-package at.seya.schoolcheck.Arrays;
+package at.seya.schoolcheck.arrays;
 
-import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 
