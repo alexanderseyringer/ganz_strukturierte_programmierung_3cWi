@@ -2,8 +2,8 @@ package at.seya.schoolcheck.smortLamp;
 
 public class Main {
     public static void main(String[] args) {
-        GlowingFilament f1 = new GlowingFilament("Osram", "WarmWHite", 5, false) ;
-        GlowingFilament f2 = new GlowingFilament("Phillips", "ColdWhite", 5, false);
+        GlowingFilament f1 = new GlowingFilament("Osram", "WarmWHite", 5) ;
+        GlowingFilament f2 = new GlowingFilament("Phillips", "ColdWhite", 5);
 
         Lamp l1 = new Lamp();
 

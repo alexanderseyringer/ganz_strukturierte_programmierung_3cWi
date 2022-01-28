@@ -4,13 +4,12 @@ public class GlowingFilament {
     private String FilamentName;
     private String FilamentColor;
     private double PowerUsage;
-    private boolean Status;
+    private boolean Status = false;
 
-    public GlowingFilament(String filamentName, String filamentColor, int powerUsage, boolean status) {
+    public GlowingFilament(String filamentName, String filamentColor, int powerUsage) {
         FilamentName = filamentName;
         FilamentColor = filamentColor;
         PowerUsage = powerUsage;
-        Status = status;
     }
 
     public String getFilamentName() {
