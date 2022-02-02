@@ -1,27 +1,26 @@
 package at.seya.OO.bankAccount;
 
-public class savingsAccount extends basicAccount{
-    private int savingYears;
-    private double rateOfInterrest;
+public class SavingsAccount extends BasicAccount {
+    private double savingYears;
+    private double rateOfInterest;
 
-    public savingsAccount(double balance, int savingYears, double rateOfInterrest) {
+    public SavingsAccount(double balance, double savingYears, double rateOfInterrest) {
         super(balance);
         this.savingYears = savingYears;
-        this.rateOfInterrest = rateOfInterrest;
+        this.rateOfInterest = rateOfInterrest;
     }
 
-    public int getSavingYears() {
+    public double getSavingYears() {
         return savingYears;
     }
 
-    public double getRateOfInterrest() {
-        return rateOfInterrest;
+    public double getRateOfInterest() {
+        return rateOfInterest;
     }
 
-    public void moneyGainer() {
-        if (this.savingYears > 2) {
-            this.setBalance(this.getBalance() + (this.getBalance() * this.savingYears));
-
-        }
+    public void accountInterest() {
+        double accountInterest = (this.getBalance() * this.getRateOfInterest()) * this.getSavingYears();
+        System.out.println("Die erhaltenen Zinsen betragen: " + accountInterest + "€");
+        this.setBalance(this.getBalance() + accountInterest);
     }
 }

@@ -1,9 +1,9 @@
 package at.seya.OO.bankAccount;
 
-public class basicAccount {
+public class BasicAccount {
     private double balance;
 
-    public basicAccount(double balance) {
+    public BasicAccount(double balance) {
         this.balance = balance;
     }
 
