@@ -1,4 +1,4 @@
 package at.seya.OO.handy;
 
-public class Main {
+public class Camera {
 }
