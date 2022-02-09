@@ -26,4 +26,8 @@ public class PhoneFile{
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getInfo() {
+        return this.name + ":" + this.dataType + ":" + this.size;
+    }
 }

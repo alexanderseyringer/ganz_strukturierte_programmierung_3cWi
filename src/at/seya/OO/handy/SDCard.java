@@ -19,4 +19,20 @@ public class SDCard {
     public List<PhoneFile> getPhoneFiles() {
         return phoneFiles;
     }
+
+    public void saveFile(PhoneFile file) {
+        phoneFiles.add(file);
+    }
+
+    public int getFreeSpace() {
+        int overallSpaceUsed = 0;
+        int freeSpace = 0;
+        for (PhoneFile phoneFile:phoneFiles) {
+            overallSpaceUsed += phoneFile.getSize();
+        }
+
+        freeSpace = this.capacity - overallSpaceUsed;
+
+        return  freeSpace;
+    }
 }

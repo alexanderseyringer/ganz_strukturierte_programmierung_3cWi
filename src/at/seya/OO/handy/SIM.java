@@ -16,4 +16,8 @@ public class SIM {
     public String getNumber() {
         return number;
     }
+
+    public void doCall(String number) {
+        System.out.println("Rufe " + number + " an...");
+    }
 }
