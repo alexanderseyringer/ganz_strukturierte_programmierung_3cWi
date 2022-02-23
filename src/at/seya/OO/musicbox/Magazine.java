@@ -46,7 +46,5 @@ public class Magazine {
         return  recordLength;
     }
 
-    public void searchRecordNumber(String name) {
 
-    }
 }
