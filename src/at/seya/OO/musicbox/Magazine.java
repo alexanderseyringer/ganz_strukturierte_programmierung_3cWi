@@ -52,19 +52,6 @@ public class Magazine {
         return  recordLength;
     }
 
-    public int searchRecord(String recordTitle) {
-        int recordPosition = this.recordList.size();
-        int foundRecordPosition = -1;
-        for (int i = this.recordList.size(); i > -1 ; i--) {
-
-            if (recordTitle == this.recordList.get(recordPosition).getName()) {
-                foundRecordPosition = recordPosition;
-            }
-            recordPosition--;
-        }
-        return foundRecordPosition + 1;
-    }
-
     public int newSearchRecord(String recordName) {
         int recordListSize = this.recordList.size();
         int foundPosition = 0;
