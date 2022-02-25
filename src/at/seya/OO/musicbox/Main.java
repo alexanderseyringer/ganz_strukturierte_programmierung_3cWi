@@ -30,5 +30,6 @@ public class Main {
 
         wurlitzer.searchRecord("All that Jazz");
 
+        wurlitzer.play("All that Jazz", 0);
     }
 }

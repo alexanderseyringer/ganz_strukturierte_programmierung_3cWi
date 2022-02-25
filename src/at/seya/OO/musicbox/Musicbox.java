@@ -29,6 +29,15 @@ public class Musicbox {
         System.out.println("Die Schallplatte befindet sich auf Position  " + this.magazine.newSearchRecord(recordTitle));
     }
 
+    /*public void loadRecord(String recordName) {
+        this.magazine.loadRecord(recordName);
+    }
+ FOISCH
+    public void play(String recordName, int title) {
+        int loadedRecordNumber = this.magazine.loadRecord(recordName);
+        System.out.println("Von der Schallplatte " + loadedRecordNumber + " wird der Titel " + title + " abgespielt!");
+    } */
+
 
 
 }

@@ -62,4 +62,15 @@ public class Magazine {
         }
         return foundPosition;
     }
+
+    public int loadRecord(String recordName) { //Objekt einfügen und ned da Name
+        int recordListSize = this.recordList.size();
+        int recordPosition = 0;
+        for (int i = 0; i < recordListSize; i++) {
+            if (recordName == this.recordList.get(i).getName()) {
+                recordPosition = i;
+            }
+        }
+        return recordPosition;
+    }
 }
