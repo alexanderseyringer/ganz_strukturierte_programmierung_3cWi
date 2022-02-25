@@ -27,7 +27,8 @@ public class Magazine {
     public void addRecord(Record recordList) {
         if(this.recordList.size() < this.capacity) {
             this.recordList.add(recordList);
-            System.out.println("Die Schallplatte wurde hinzugefügt! Es sind noch " + this.recordList.size() + " Plätze frei!");
+            int freeRecords = this.capacity - this.recordList.size();
+            System.out.println("Die Schallplatte wurde hinzugefügt! Es sind noch " + freeRecords + " Plätze frei!");
         }
 
         else {
@@ -36,9 +37,10 @@ public class Magazine {
     }
 
     public void removeRecord(int selectedRecord) {
-        selectedRecord =-1;
+        selectedRecord = selectedRecord -1;
         this.recordList.remove(selectedRecord);
-        System.out.println("Die Schallplatte " + selectedRecord + " wurde ausgeworfen!");
+        selectedRecord = selectedRecord + 1;
+        System.out.println("Schallplatte " + selectedRecord + " wurde ausgeworfen!");
     }
 
     public double getSumOfRecordLength() {
@@ -61,5 +63,16 @@ public class Magazine {
             recordPosition--;
         }
         return foundRecordPosition + 1;
+    }
+
+    public int newSearchRecord(String recordName) {
+        int recordListSize = this.recordList.size();
+        int foundPosition = 0;
+        for (int i = 0; i < recordListSize; i++) {
+            if (recordName == this.recordList.get(i).getName()) {
+                foundPosition = i;
+            }
+        }
+        return foundPosition;
     }
 }

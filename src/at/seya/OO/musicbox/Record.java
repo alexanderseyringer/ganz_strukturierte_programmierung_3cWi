@@ -26,7 +26,7 @@ public class Record {
         return songList;
     }
 
-    public void addSongs(Song songList) {this.songList.add(songList);}
+    public void addSong(Song songList) {this.songList.add(songList);}
 
     public double getSumOfSongLength() {
         double songLength = 0;
@@ -34,7 +34,6 @@ public class Record {
         for (int i = 0; i < allTitles; i++) {
             songLength = songLength + this.songList.get(i).getLength();
         }
-        System.out.println("Für DEGUB Zwecke: " + songLength);
         return songLength;
     }
 }
