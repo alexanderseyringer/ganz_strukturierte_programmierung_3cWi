@@ -26,7 +26,7 @@ public class Musicbox {
     }
 
     public void searchRecord(String recordTitle) {
-        System.out.println("Der gefundene Titel befindet sich auf der Schallplatte " + this.magazine.newSearchRecord(recordTitle));
+        System.out.println("Die Schallplatte befindet sich auf Position  " + this.magazine.newSearchRecord(recordTitle));
     }
 
 
