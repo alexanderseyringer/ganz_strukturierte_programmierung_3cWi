@@ -25,4 +25,8 @@ public class Musicbox {
         System.out.println("Die Summe aller Titel auf allen Schallplatten beträgt: " + this.magazine.getSumOfRecordLength());
     }
 
+    public void searchRecord(String recordTitle) {
+        System.out.println("Der gefundene Titel befindet sich auf der Schallplatte " + this.magazine.searchRecord(recordTitle));
+    }
+
 }
