@@ -7,6 +7,10 @@ public class Magazine {
     private int capacity = 50;
     private List<Record> recordList;
 
+    public Magazine() {
+        this.recordList = new ArrayList<>();
+    }
+
     public Magazine(int capacity) {
         this.capacity = capacity;
         this.recordList = new ArrayList<>();
@@ -20,7 +24,7 @@ public class Magazine {
         return recordList;
     }
 
-    public void addRecords(Record recordList) {
+    public void addRecord(Record recordList) {
         if(this.recordList.size() < this.capacity) {
             this.recordList.add(recordList);
             System.out.println("Die Schallplatte wurde hinzugefügt! Es sind noch " + this.recordList.size() + " Plätze frei!");
