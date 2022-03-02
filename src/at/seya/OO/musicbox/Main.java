@@ -2,10 +2,10 @@ package at.seya.OO.musicbox;
 
 public class Main {
     public static void main(String[] args) {
-        Song s1 = new Song(4.3);
-        Song s2 = new Song(9.1);
-        Song s3 = new Song(9.2);
-        Song s4 = new Song(7.1);
+        Song s1 = new Song(4.3, "BlackWidow");
+        Song s2 = new Song(9.1, "YellowHoney");
+        Song s3 = new Song(9.2, "RedRaspberry");
+        Song s4 = new Song(7.1, "BlueBerry");
 
         Record r1 = new Record(01, "Debussy's Best");
         Record r2 = new Record(02, "Debussy's Almost Best");
@@ -22,7 +22,9 @@ public class Main {
         m1.addRecord(r2);
         m1.addRecord(r3);
 
-        Musicbox wurlitzer = new Musicbox(m1, "Wurlitzer Soundmaster 6000");
+        Player rp1 = new Player(m1);
+
+        Musicbox wurlitzer = new Musicbox(m1, "Wurlitzer Soundmaster 6000", rp1);
 
        // wurlitzer.removeRecord(2);
 
@@ -30,6 +32,7 @@ public class Main {
 
         wurlitzer.searchRecord("All that Jazz");
 
-        wurlitzer.play("All that Jazz", 0);
+        wurlitzer.loadRecord("All that Jazz");
+        wurlitzer.play(0);
     }
 }

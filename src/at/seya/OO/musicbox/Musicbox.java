@@ -3,10 +3,12 @@ package at.seya.OO.musicbox;
 public class Musicbox {
     private Magazine magazine;
     private String name;
+    private Player player;
 
-    public Musicbox(Magazine magazine, String name) {
+    public Musicbox(Magazine magazine, String name, Player player) {
         this.magazine = magazine;
         this.name = name;
+        this.player = player;
     }
 
     public Magazine getMagazine() {
@@ -29,15 +31,11 @@ public class Musicbox {
         System.out.println("Die Schallplatte befindet sich auf Position  " + this.magazine.newSearchRecord(recordTitle));
     }
 
-    /*public void loadRecord(String recordName) {
-        this.magazine.loadRecord(recordName);
+    public void loadRecord(String recordTitle) {
+        this.player.loadRecord(recordTitle);
     }
- FOISCH
-    public void play(String recordName, int title) {
-        int loadedRecordNumber = this.magazine.loadRecord(recordName);
-        System.out.println("Von der Schallplatte " + loadedRecordNumber + " wird der Titel " + title + " abgespielt!");
-    } */
 
-
-
+    public void play(int num) {
+        this.player.play(num);
+    }
 }
