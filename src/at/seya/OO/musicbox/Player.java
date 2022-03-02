@@ -37,7 +37,7 @@ public class Player {
 
     public void play(int num) {
         if (this.loaded == true) {
-            System.out.println("Es wird der Titel " + this.magazine.getRecordList().get(this.loadedRecordNumber).getSongList().get(num).getName() + " auf der Schallplatte " + this.magazine.getRecordList().get(this.loadedRecordNumber).getName() + " abgespielt.");
+            System.out.println("Es wird der Titel " + this.magazine.getRecordList().get(this.loadedRecordNumber).getSongList().get(num + 1).getName() + " auf der Schallplatte " + this.magazine.getRecordList().get(this.loadedRecordNumber).getName() + " abgespielt.");
         }
 
         else {
