@@ -1,25 +1,27 @@
 package at.seya.OO.ticketMachine;
 
+import java.util.Date;
+
 public class Ticket {
     private int id;
-    private String createdTime;
-    private String payedTime;
+    private Date startTime;
+    private Date endTime;
 
-    public Ticket(int id, String createdTime) {
+    public Ticket(int id) {
         this.id = id;
-        this.createdTime = createdTime;
-        this.payedTime = payedTime;
+        this.startTime = new Date();
+        this.endTime = endTime;
     }
 
     public int getId() {
         return id;
     }
 
-    public String getCreatedTime() {
-        return createdTime;
+    public Date getCreatedTime() {
+        return startTime;
     }
 
-    public String getPayedTime() {
-        return payedTime;
+    public Date getEndTime() {
+        return endTime;
     }
 }
