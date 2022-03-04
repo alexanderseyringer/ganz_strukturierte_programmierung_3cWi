@@ -30,5 +30,9 @@ public class ExchangeUnit {
             System.out.println("Der zu Zahlende Preis beträgt: " + price + "€");
         }
 
+        else {
+            System.out.println("Es wurd kein Ticket eingeführt!");
+        }
+
     }
 }
