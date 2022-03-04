@@ -2,6 +2,7 @@ package at.seya.OO.ticketMachine;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class TicketMachine {
     private Controller controller;
@@ -9,7 +10,7 @@ public class TicketMachine {
     private int insertedTicketNumber;
     private ExchangeUnit exchangeUnit;
 
-    public TicketMachine(Controller controller) {
+    public TicketMachine(Controller controller, ExchangeUnit exchangeUnit) {
         this.controller = controller;
         this.inserted = inserted;
         this.insertedTicketNumber = insertedTicketNumber;
@@ -42,6 +43,23 @@ public class TicketMachine {
     }
 
     public void getPrice() {
-        this.exchangeUnit.getPrice();
+        if(this.isInserted()) {
+            Date endDate = new Date();
+            this.controller.getTicketList().get(this.getInsertedTicketNumber()).setEndTime(endDate.getTime());
+            long timeDiffBegining = this.controller.getTicketList().get(this.getInsertedTicketNumber()).getStartTime();
+            long timeDiffEnd = this.controller.getTicketList().get(this.getInsertedTicketNumber()).getEndTime();
+
+            long timeDiffMs = timeDiffBegining - timeDiffEnd;
+            long timeDiffs = timeDiffMs / 1000;
+            double timeDiffm = timeDiffs / 60;
+
+            double price = timeDiffm * this.controller.getTarif();
+            System.out.println("Der zu Zahlende Preis beträgt: " + price + "€");
+        }
+
+        else {
+            System.out.println("Es wurd kein Ticket eingeführt!");
+        }
+
     }
 }
