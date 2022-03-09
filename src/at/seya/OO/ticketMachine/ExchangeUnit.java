@@ -14,4 +14,13 @@ public class ExchangeUnit {
         this.ticketMachine = ticketMachine;
         this.controller = controller;
     }
+
+    public double getChange() {
+        return change;
+    }
+
+    public void setChange(double change) {
+        this.change = change;
+    }
 }
+

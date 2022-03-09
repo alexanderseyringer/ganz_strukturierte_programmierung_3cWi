@@ -11,6 +11,7 @@ public class Main {
         ticketer500.getTicket();
 
         ticketer500.insertTicket(0);
-        ticketer500.getPrice();
+
+        ticketer500.insertMoney();
     }
 }
