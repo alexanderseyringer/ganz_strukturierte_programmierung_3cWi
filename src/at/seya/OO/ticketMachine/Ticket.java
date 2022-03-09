@@ -28,7 +28,7 @@ public class Ticket {
         return endTime;
     }
 
-    public void setEndTime(long endTime) {
+    public void setEndTime(long endTime) { 
         this.endTime = endTime;
     }
 }
