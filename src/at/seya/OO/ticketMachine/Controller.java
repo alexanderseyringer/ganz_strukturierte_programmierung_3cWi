@@ -28,5 +28,6 @@ public class Controller {
 
     public void addTicket(Ticket ticketlist) {
         this.ticketList.add(ticketlist);
+
     }
 }
