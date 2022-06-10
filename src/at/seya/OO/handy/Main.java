@@ -12,14 +12,14 @@ public class Main {
 
         sonyCamera.takePicture();
 
-       chinaPhone.doCall("+4322354654");
+        chinaPhone.doCall("+4322354654");
 
-       chinaPhone.takePicture();
-       chinaPhone.takePicture();
-       chinaPhone.takePicture();
-       chinaPhone.printAllFiles();
+        chinaPhone.takePicture();
+        chinaPhone.takePicture();
+        chinaPhone.takePicture();
+        chinaPhone.printAllFiles();
 
-       System.out.println(chinaPhone.getFreeSpace());
+        System.out.println(chinaPhone.getFreeSpace());
 
     }
 }
